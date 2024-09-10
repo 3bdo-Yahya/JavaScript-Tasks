@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="google()">Open Google in Bottom Right</button>
+
+    <script>
+        function google() {
+
+            const leftPosition = screen.availWidth - 500;
+            const topPosition = screen.availHeight - 500;
+
+            window.open(
+                'https://www.google.com',
+                '_blank',
+                `width=500,height=500,left=${leftPosition},top=${topPosition}`
+
+                // `width=500,height=500,left=1122,top=395` 
+            );
+        }
+    </script>
+</body>
+
+</html>

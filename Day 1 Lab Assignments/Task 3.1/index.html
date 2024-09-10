@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function weather(temp) {
+
+            return (temp >= 30) ? "HOT" : (temp < 30) ? "Cold" : "Unknown";
+
+            // or
+            // if (temp >= 30) return "HOT";
+            // else if (temp < 30) return "Cold";
+            // else return "Unknown";
+        }
+
+
+        let temp = prompt("Enter Today's Temperature");
+        document.write(weather(temp));
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Task 3.1:
+
+    Make a function that takes today’s temperature as a parameter,
+
+    prints: “HOT” if the entered temperature are more than or equals 30
+    “Cold” if it’s less than 30
+    *use ternary conditional operator
+-->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter a string");
+        let Case = confirm("Do you want to consider case sensitivity?");
+        palindrome(str, Case);
+
+        function palindrome(str, Case){
+            let str2 = str.split("").reverse().join("");
+            let lowerStr2 = str.toLowerCase();
+
+            // or simply using for loop
+            // for(let i = 0; i < str.length; i++) reversed = str[i] + reversed;
+
+            if(Case) {
+                if(str == str2) alert("The entered string is palindrome.");
+                
+                else alert("The entered string is not palindrome.");
+            }
+            else {
+                if(lowerStr2 == str2.toLowerCase()) alert("The entered string is palindrome.");
+                
+                else alert("The entered string is not palindrome.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+    Task 2:
+
+    Write a script to determine whether the entered string is
+    palindrome or not. Request the string to be entered via prompt, ask
+    the user whether to consider case sensitivity of the entered string or
+    not via confirm, handle both cases in your script i.e. RADAR NOON
+    MOOM are palindrome.
+
+    Note: raDaR is not a palindrome if user requested considering case of
+    entered string, it will be palindrome if user requested ignoring case
+    sensitivity.
+-->

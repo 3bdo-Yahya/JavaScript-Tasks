@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            let age = prompt("Enter Your Birth Year if less than 2010");
+            if (age < 2010) {
+                let name = prompt("Enter Your Name");
+                document.write(`Name: ${name} <br> Birth year: ${age} <br> Age: ${2011 - age}`);
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Task 6:
+
+    On contact page prompt user to enter his name, and his birth year and make sure that
+    it is less than 2010, and then calculate his age.
+    if user age isn't less than 2010 show him the same prompt again until user enters it (use
+    loops).
+    And after validating user input, write all user input on the page in that format:
+    Name: ahmed
+    Birth year: 1981
+    Age: 30
+-->

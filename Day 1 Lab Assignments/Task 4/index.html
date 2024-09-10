@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function student(college) {
+            switch (college) {
+                case "fci":
+                    document.write("You're eligible to Programing tracks");
+                    break;
+                case "engineering":
+                    document.write("You're eligible to Network and Embedded tracks");
+                    break;
+                case "commerce":
+                    document.write("You’re eligible to ERP and Social media tracks");
+                    break;
+                default:
+                    document.write("You’re eligible to SW fundamentals track");
+                    break;
+            }
+        }
+
+        let college = prompt("Enter Your University").toLowerCase();
+        student(college);
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Task 4:
+
+    Make a function that takes Student university as a parameter:
+    a. If the entered university: FCI, show message: “You’re eligible to Programing
+    tracks”.
+    b. If the entered university: Engineering, show message: “You’re eligible to
+    Network and Embedded tracks”.
+    c. If the entered university: Commerce, show message: “You’re eligible to ERP
+    and Social media tracks”.
+    d. For any other university, show message: “You’re eligible to SW fundamentals
+    track”.
+    (Use switch)
+-->

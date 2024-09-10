@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function result(x, y) {
+            return Number(x) + Number(y);
+            // return parseFloat(x) + parseFloat(y);
+            // return parseInt(x, 10) + parseInt(y, 10);
+            // return +x + +y
+        }
+
+        let x = prompt("Enter number 1");
+        let y = prompt("Enter number 2");
+        document.write(result(x, y));
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Task 2:
+
+    ask user to enter 2 numbers (prompt) then Make a function that takes 2 parameters and
+    return result (function return the result, don't alert or print inside it), call the function,
+    and display the result returned by the function in the console.
+-->

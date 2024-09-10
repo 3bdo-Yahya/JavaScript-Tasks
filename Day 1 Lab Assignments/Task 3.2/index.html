@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function weather(temp, actual) {
+
+            if (temp >= 25 && temp <= 30 && actual >= 25 && actual <= 30) {
+                return "Normal";
+            } else if (temp < 25 && actual < 25) {
+                return "Cold";
+            } else if (temp > 30 && actual > 30) {
+                return "Hot";
+            } else {
+                return "Unknown";
+            }
+
+
+            // or Ternary operators
+            // return (temp >= 25 && temp <= 30 && actual >= 25 && actual <= 30) ? "Normal" :
+            //     (temp < 25 && actual < 25) ? "Cold" :
+            //         (temp > 30 && actual > 30) ? "Hot" :
+            //             "Unknown";
+        }
+
+        let temp = prompt("Enter Today's Temperature");
+        let actual = prompt("Enter Today's Actual feel temperature");
+        document.write(weather(temp, actual));
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Task 3.2:
+
+    Make function to take 2 parameters: Temperature and Actual feel temperature
+    a. Prints normal if both of temperature and actualFeel between 25 and 30.
+    b. Prints Cold if both of temperature and actualFeel less than 25.
+    c. Prints Hot if both of temperature and actualFeel higher than 30.
+    d. Prints “unknown, can’t detect”, in any different case.
+-->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function odd(start, end) {
+            for (let i = start; i <= end; i++) {
+                if (i % 2 != 0) {
+                    document.write(i + " ");
+                }
+            }
+        }
+
+        let start = prompt("Enter start number");
+        let end = prompt("Enter end number");
+        odd(start, end);
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Task 5:
+
+    Write a function that takes 2 parameters: start and end number and print odd numbers
+    between the given 2 numbers.
+-->

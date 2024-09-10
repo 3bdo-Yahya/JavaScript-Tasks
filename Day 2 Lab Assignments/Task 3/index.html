@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Adding -- Multiplying -- Dividing</h1>
+    <hr><hr>    
+</head>
+<body>
+    <script>
+        let arr = [], sum = 0, mul = 1, div;
+        for(let i = 0; i < 3; i++) arr[i] = prompt("Enter number");
+
+        for(let i = 0; i < 3; i++){
+            sum += Number(arr[i]);
+            mul *= arr[i];
+            !i ? div = arr[i] : div /= arr[i];
+        }
+        document.write(`<h2><font color="red">Sum:            </font>${arr[0]} + ${arr[1]} + ${arr[2]} = ${sum}</h2><br>`);
+        document.write(`<h2><font color="red">Multiplication: </font>${arr[0]} * ${arr[1]} * ${arr[2]} = ${mul}</h2><br>`);
+        document.write(`<h2><font color="red">Division:       </font>${arr[0]} / ${arr[1]} / ${arr[2]} = ${div}</h2><br>`);
+        document.write('<br><br><br><br><hr>Itz Abdelrahman Yahia')
+    </script>
+</body>
+</html>
+
+<!-- 
+    Task 3:
+
+    Fill an array of 3 elements from the user, and apply each of the
+    following mathematical operations on it (+, *, /).
+-->

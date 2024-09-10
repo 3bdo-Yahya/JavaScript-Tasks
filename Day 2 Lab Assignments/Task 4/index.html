@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+
+        for (let i = 0; i < 5; i++) arr[i] = +prompt(`Enter number #${i+1}`);
+        document.write("<h1><font color='blue'>You've entered: </font>" + arr + "</h1><br>");
+
+        arr.sort((a, b) => b - a);
+        document.write("<h2><font color='red'>Ascending order: </font>" + arr + "</h2><br>");
+
+        arr.sort((a, b) => a - b);
+        document.write("<h2><font color='red'>Descending order: </font>" + arr + "</h2><br>");
+    </script>
+</body>
+</html>
+
+<!-- 
+    Task 4:
+    4. Fill an array (5 numerical values) from the user, Sort it in
+    descending and ascending orders then display the output
+-->
