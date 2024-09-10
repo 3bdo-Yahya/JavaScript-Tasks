@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function m() {
+            var headers = '';
+            for (var i = 1; i <= 6; i++) {
+                headers += '<h' + i + '>welcome to my page</h' + i + '>';
+            }
+            document.write(headers);
+        }
+        window.onload = m;
+    </script>
+</body>
+
+</html>
